@@ -1,0 +1,45 @@
+body {
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+}
+
+h1 {
+  color: #0a043c;
+  margin: 50px;
+  text-align: center;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+hr {
+  border: 2px solid white;
+  margin: 0px;
+}
+
+i {
+  font-size: 50px;
+}
+
+.card {
+  border: none;
+  color: #0a043c;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+.bi-sun {
+  text-align: left;
+}
+
+.searchButton {
+  background-color: #0a043c;
+  border: none;
+  color: azure;
+}
+
+#currentLocation {
+  background-color: #ffffff;
+  text-align: center;
+  border: none;
+}

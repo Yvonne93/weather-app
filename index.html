@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Weather App
+      </h1>
+
+      <form id="search-form">
+          <div class="input-group mb-3 form-floating mb-3">
+            <input
+            type="text"
+            class="form-control"
+						id="inputCity"
+						autocomplete="off"
+						autofocus="on"
+						aria-describedby="button-addon2">						
+						<input type = "submit" class= "searchButton" value="Search for city"/>
+            <!--<button class="btn btn-secondary" type="button" id="button-addon2">Search</button>-->
+          </div>
+      </form>
+  
+      <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+          <i class="bi bi-sun" style="float: left"> </i>
+          <h6 id="currentDate">Today</h6>
+					<h5 id="city">HAMBURG</h5>
+					<p id="temp">
+						<strong>20°C </strong> / 5°C
+					</p>
+				 <button id="currentLocation">Current location</button>
+        </div>
+      </div>
+
+    <hr>
+      <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">MON</h6>
+                <i class="bi bi-cloud-lightning-rain"></i>
+                <p class="card-text">12°C / 10°C</p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">TUE</h6>
+                <i class="bi bi-cloud-drizzle"></i>
+                <p class="card-text">15°C / 5°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">WED</h6>
+                  <i class="bi bi-sun"></i>
+                  <p class="card-text">25°C / 15°C</p> 
+                </div>                   
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">THU</h6>
+            <i class="bi bi-cloud-minus"></i>
+            <p class="card-text">20°C / 5°C</p> 
+          </div>                   
+  </div>
+</div>
+<div class="col-md-2">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-title">FRI</h6>
+        <i class="bi bi-sun"></i>
+        <p class="card-text">23°C / 18°C</p> 
+      </div>                   
+</div>
+</div>
+<div class="col-md-2">
+  <div class="card">
+    <div class="card-body">
+      <h6 class="card-title">SAT</h6>
+      <i class="bi bi-cloud-minus"></i>
+      <p class="card-text">20°C / 5°C</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
